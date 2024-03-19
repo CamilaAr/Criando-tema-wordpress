@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-
     <div id="page" class="site">
         <header>
             <section class="top-bar">
@@ -17,13 +15,12 @@
                         Logo
                     </div>
                     <div class="searchbox">
-                        search
-                    </div>
+                        Search
+                    </div>                    
                 </div>
-
             </section>
             <section class="menu-area">
-                <div class="contanier">
+                <div class="container">
                     <nav class="main-menu">
                         <button class="check-button">
                             <div class="menu-icon">
@@ -32,13 +29,8 @@
                                 <div class="bar3"></div>
                             </div>
                         </button>
-                        <?php wp_nav_menu(array(
-                            'theme_location' => 'wp_devs_main_menu',
-                            'depth' => 2
-                        )); ?>
-
-                    </nav>
+                        <?php wp_nav_menu( array( 'theme_location' => 'wp_devs_main_menu', 'depth' => 2 )); ?>
+                    </nav>                    
                 </div>
-
             </section>
         </header>
